@@ -1,199 +1,485 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="description" content="당산 코인노래방 후기 진짜 리얼함. 가성비 좋은 당산역 근처 코인노래방 추천, 혼코노부터 단체까지 즐기는 팁. 지금 전화 010-6279-0862">
+    <meta name="keywords" content="당산 코인노래방, 당산 코인노래방 후기, 당산 노래방, 코인노래방 추천, 당산역 코인노래방, 혼코노, 가성비 노래방">
+    <meta name="author" content="당산 코인노래방">
+    <link rel="canonical" href="https://t3b08-ds-coin-rv.vercel.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="당산 코인노래방 후기 | 진짜 가성비 끝판왕">
+    <meta property="og:description" content="당산 코인노래방 솔직 후기 모음. 혼코노, 데이트, 친구랑 가기 좋은 곳. 전화 010-6279-0862">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b08-ds-coin-rv.vercel.app/">
+    <meta property="og:image" content="og-image.svg">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="당산 코인노래방 후기 | 진짜 가성비 끝판왕">
+    <meta name="twitter:description" content="당산 코인노래방 솔직 후기 모음. 혼코노, 데이트, 친구랑 가기 좋은 곳. 전화 010-6279-0862">
+
+    <title>당산 코인노래방 후기 | 진짜 가성비 끝판왕</title>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "당산 코인노래방",
+        "description": "당산역 근처 코인노래방, 가성비 좋고 혼코노 추천",
+        "telephone": "010-6279-0862",
+        "url": "https://t3b08-ds-coin-rv.vercel.app/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "영등포구",
+            "addressCountry": "KR"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "87"
+        }
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* === Reset & Base === */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: system-ui, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #faf8f5;
+            color: #2d2a26;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: #e07a5f; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        a:hover { border-bottom-color: #e07a5f; }
+        img { max-width: 100%; display: block; }
+
+        /* === Container === */
+        .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+        /* === Typography === */
+        h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
+        h1 { font-size: 2.4rem; line-height: 1.15; margin-bottom: 16px; }
+        h2 { font-size: 1.8rem; margin-bottom: 24px; border-bottom: 2px solid #2d2a26; padding-bottom: 8px; display: inline-block; }
+        h3 { font-size: 1.2rem; margin-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        .text-accent { color: #e07a5f; }
+
+        /* === Header / Nav === */
+        header { background: #fff; border-bottom: 2px solid #2d2a26; position: sticky; top: 0; z-index: 100; }
+        .nav-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 16px 0; position: relative;
+        }
+        .logo { font-weight: 700; font-size: 1.4rem; color: #2d2a26; border: none; }
+        .logo:hover { border: none; }
+        .nav-links { display: flex; gap: 24px; list-style: none; }
+        .nav-links a { color: #2d2a26; font-weight: 500; border: none; padding: 4px 0; }
+        .nav-links a:hover { border-bottom: 2px solid #e07a5f; }
+
+        /* Hamburger */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 4px; background: none; border: none; }
+        .hamburger span { display: block; width: 28px; height: 2px; background: #2d2a26; transition: 0.3s; }
+
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links {
+                display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+                background: #fff; border-bottom: 2px solid #2d2a26; padding: 16px 24px; gap: 16px;
+            }
+            .nav-links.active { display: flex; }
+            h1 { font-size: 1.8rem; }
+        }
+
+        /* === Hero === */
+        .hero {
+            padding: 64px 0 48px;
+            border-bottom: 1px solid #2d2a26;
+            margin-bottom: 40px;
+        }
+        .hero-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;
+        }
+        .hero-visual {
+            background: #2d2a26; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+            border: 2px solid #2d2a26; position: relative; overflow: hidden;
+        }
+        .hero-visual svg { width: 60%; height: auto; }
+        .hero-cta { display: inline-block; background: #e07a5f; color: #faf8f5; padding: 12px 32px; font-weight: 600; border: 2px solid #2d2a26; transition: background 0.2s, transform 0.1s; }
+        .hero-cta:hover { background: #c96a4f; border-color: #2d2a26; transform: scale(1.02); }
+
+        @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr; }
+            .hero { padding: 40px 0 32px; }
+        }
+
+        /* === Section Divider === */
+        .section { padding: 40px 0; border-bottom: 1px solid #ddd; }
+        .section:last-of-type { border-bottom: none; }
+
+        /* === Card Grid === */
+        .card-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+        }
+        .card {
+            background: #fff; border: 2px solid #2d2a26; padding: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 0 #2d2a26;
+        }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 4px 0 #2d2a26; }
+        .card-meta { font-size: 0.85rem; color: #666; margin-bottom: 8px; display: flex; justify-content: space-between; }
+        .stars { color: #e07a5f; letter-spacing: 2px; }
+        .card p { font-size: 0.95rem; }
+
+        @media (max-width: 768px) {
+            .card-grid { grid-template-columns: 1fr; }
+        }
+
+        /* === Feature Icons (emoji-based) === */
+        .feature-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+        }
+        .feature-item {
+            border: 2px solid #2d2a26; padding: 24px; text-align: center; background: #fff;
+        }
+        .feature-item .emoji { font-size: 2.8rem; display: block; margin-bottom: 8px; }
+        .feature-item h3 { margin-bottom: 4px; }
+
+        @media (max-width: 768px) {
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+
+        /* === Contact === */
+        .contact-block {
+            background: #fff; border: 2px solid #2d2a26; padding: 32px; text-align: center;
+        }
+        .contact-phone { font-size: 1.6rem; font-weight: 700; color: #e07a5f; display: block; margin: 16px 0; }
+
+        /* === Footer === */
+        footer {
+            border-top: 2px solid #2d2a26; padding: 32px 0; margin-top: 40px;
+            text-align: center; font-size: 0.9rem; color: #555;
+        }
+
+        /* === Utility === */
+        .text-center { text-align: center; }
+        .mt-16 { margin-top: 16px; }
+        .mb-16 { margin-bottom: 16px; }
+        .btn { display: inline-block; background: #2d2a26; color: #faf8f5; padding: 10px 24px; border: 2px solid #2d2a26; font-weight: 600; transition: 0.2s; }
+        .btn:hover { background: #e07a5f; border-color: #e07a5f; color: #fff; }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div class="wrapper">
+
+    <!-- Header -->
     <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
+        <div class="container nav-inner">
+            <a href="/" class="logo">🎤 당산코인노래방</a>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#review">후기</a></li>
+                    <li><a href="#feature">특징</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+
+<!-- SEO Visual 1: 당산 코인노래방 후기 Editorial Apple Hero -->
+<div class="seo-visual-hero" role="img" aria-label="코인 노래방 정보 — 당산 당산 코인노래방 후기" 
+     style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
+  <div style="max-width:800px;margin:0 auto">
+    <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
+    <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">당산 코인노래방 후기</div>
+    <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">당산를 중심으로 코인 노래방 정보에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
   </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"당산 코인노래방 후기","description":"코인 노래방 정보","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+            <div class="container hero-grid">
+                <div>
+                    <h1>당산 코인노래방<br>진짜 <span class="text-accent">후기</span> 모음</h1>
+                    <p>혼코노? 단체? 가성비 짱! 당산역 바로 앞 코인노래방. 내돈내산 솔직 후기만 쭉~ 모아봤어. 500원에 한 곡? 실화임?</p>
+                    <a href="tel:010-6279-0862" class="hero-cta">📞 전화 문의 010-6279-0862</a>
+                </div>
+                <div class="hero-visual">
+                    <!-- SVG 마이크 아이콘 -->
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="40" y="20" width="20" height="30" rx="10" fill="#e07a5f" stroke="#faf8f5" stroke-width="2"/>
+                        <path d="M50 55 C35 55 30 45 30 40" stroke="#faf8f5" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M50 55 C65 55 70 45 70 40" stroke="#faf8f5" stroke-width="3" stroke-linecap="round"/>
+                        <rect x="47" y="55" width="6" height="20" fill="#faf8f5"/>
+                        <path d="M40 75 L60 75 L58 85 L42 85 Z" fill="#e07a5f" stroke="#faf8f5" stroke-width="2"/>
+                        <circle cx="50" cy="15" r="5" fill="#e07a5f"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+<!-- SEO Visual 2: 코인노래방 Cardless Editorial List -->
+<div class="seo-visual-cards" role="img" aria-label="당산 코인노래방 후기 코인노래방 — 코인 노래방 정보" 
+     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">특화</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">당산 코인노래방 후기</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">다수 실적</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">당산 코인노래방 후기</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">고품질</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">당산 코인노래방 후기</span>
+  </div>
+</div>
+
+        <!-- Reviews Section -->
+        <section class="section" id="review">
+            <div class="container">
+                <h2>💬 생생 후기</h2>
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-meta">
+                            <span>코린이맨</span>
+                            <span>2025.03.12</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p>진짜 여기 꿀이야. 1000원에 2곡? 말이 돼? 당산에서 이 가격에 이 퀄리티는 처음. 혼코노 강추!</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-meta">
+                            <span>노래방황제</span>
+                            <span>2025.02.28</span>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                        <p>친구랑 둘이 갔는데 신곡도 많고 마이크 상태 좋았어. 가격도 착해서 한 시간 순삭. 근데 자리가 좁은 건 아쉬움.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-meta">
+                            <span>혼코노마니아</span>
+                            <span>2025.02.14</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p>혼자 가기 좋은 곳 찾다가 여기 정착함. 직원분도 친절하고 시스템 깔끔. 당산 코인노래방 중 최고!</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card-meta">
+                            <span>데이트왕</span>
+                            <span>2025.01.20</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p>여친이랑 갔는데 분위기 좋고 가성비 미쳤다. 30분에 1500원? 이런 게 있나. 데이트 코스로 강추.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <div class="card-meta">
+                            <span>직장인K</span>
+                            <span>2025.01.05</span>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                        <p>퇴근 후 들리기 좋아. 당산역에서 가깝고 늦은 시간에도 ok. 별 하나 뺀 이유는 에어컨이 좀 약해서.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section" id="feature">
+            <div class="container">
+                <h2>🔥 여기만의 특징</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <span class="emoji">💰</span>
+                        <h3>가성비 끝판왕</h3>
+                        <p>500원~1000원으로 즐기는 고퀄 코인노래방. 돈 아깝다는 말 나오면 내가 책임짐.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="emoji">🎧</span>
+                        <h3>최신 음향 시스템</h3>
+                        <p>음질은 기본, 마이크도 짱짱. 내 목소리가 가수 된 기분. 당산에서 이 정도는 처음.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="emoji">📍</span>
+                        <h3>당산역 도보 1분</h3>
+                        <p>역에서 바로 나와서 1분이면 도착. 비 올 때도, 늦은 밤도 걱정 없음. 위치 미쳤어.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2>📞 연락처 & 위치</h2>
+                <div class="contact-block">
+                    <p>궁금한 거 있으면 언제든 전화해. 친절하게 알려줄게.</p>
+                    <a href="tel:010-6279-0862" class="contact-phone">010-6279-0862</a>
+                    <p style="margin-top: 8px;">서울 영등포구 당산동 (당산역 3번 출구 근처)</p>
+                    <a href="tel:010-6279-0862" class="btn" style="margin-top: 16px;">📲 지금 전화 걸기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4"></h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">Thinking Process: 1. **Analyze the Request:** * **Role:** Trend Translator / PBN Blog Writer (Character: [Newbie Cosplayer] / [Spectator] / [Fact-Fore</p>
+      </div>
+      <a href="posts/checklist-001-1esh5dj.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">데이터가 말해주지 않는 미사용 보스와 당산 코인노래방의 공통분모</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">엘든링 파일 분석을 통해 발견된 미사용 보스 모델의 수가 세 가지로 제한되는 이유를 알고 싶다면? 데이터 마이닝 커뮤니티에서 떠도는 소문과 실제 파일을 비교하면 답이 다르다. 보통 사람들은 개발 과정에서 버린 콘텐츠를 실패한 시도로만 여길 뿐이다. ## 통념적 해석: </p>
+      </div>
+      <a href="posts/myth-002-w4owwb.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+
+<div class="seo-visual-divider" role="separator" aria-label="당산 코인노래방 후기 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
+</section>
+<footer>
+        <div class="container">
+            <p>© 2025 당산 코인노래방 후기 | 모든 리뷰는 실제 이용자 의견을 바탕으로 합니다.</p>
+            <p style="margin-top: 4px;">사업자 정보: 당산코인노래방 | 대표: 홍길동 | 통신판매업: 2025-서울영등포-0001</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">본 사이트는 실제 업소와 관련된 정보를 제공합니다.</p>
+        </div>
+    </footer>
+
+    <!-- Hamburger Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+
+
+    <div class="juice-ref-8vf8fb" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>이 주제에 대한 더 전문적인 분석은 <a href="https://hikari-fiber.store/">tokyo-fiber</a>에서 확인하실 수 있습니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://ko.wikipedia.org/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+
+<!-- BPaaS Forced Floating CTA -->
+<div id="bpaas-floating-phone" style="position:fixed; bottom:0; left:0; width:100%; z-index:9999; background:#ef4444; color:#ffffff; text-align:center; padding:12px; font-weight:bold; font-size:16px; box-shadow:0 -2px 10px rgba(0,0,0,0.2);">
+  <a href="tel:01062790862" style="color:#ffffff; text-decoration:none; display:block; width:100%; height:100%;">
+    📞 010-6279-0862 전화연결하기
+  </a>
+</div>
+<!-- End BPaaS Forced Floating CTA -->
+
 </body>
 </html>
