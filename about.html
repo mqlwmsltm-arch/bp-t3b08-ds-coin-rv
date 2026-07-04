@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="description" content="당산 코인노래방 위치, 가격, 시설 정보 총정리. 당산역 도보 3분, 1곡 500원, 최신 음악 보유. 전화문의 010-6279-0862">
+    <meta name="keywords" content="당산 코인노래방, 당산 코인노래방 정보, 당산역 노래방, 코인노래방 가격, 당산 노래방 위치, 코인노래방 시설, 24시간 노래방">
+    <meta name="author" content="당산 코인노래방">
+    <link rel="canonical" href="https://t3b08-ds-coin-rv.vercel.app/info">
+    <meta property="og:title" content="당산 코인노래방 정보 | 위치, 가격, 시설 한눈에">
+    <meta property="og:description" content="당산 코인노래방의 모든 정보를 확인하세요. 합리적인 가격과 최신 시설, 편리한 위치까지.">
+    <meta property="og:image" content="https://t3b08-ds-coin-rv.vercel.app/og-info.jpg">
+    <meta property="og:url" content="https://t3b08-ds-coin-rv.vercel.app/info">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>당산 코인노래방 정보 | 위치 가격 시설 안내</title>
+    <style>
+        /* === Reset & Base === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: #0071e3;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #005bbf;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* === Container === */
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* === Typography === */
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #1d1d1f;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid #e8e8ed;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #515154;
+        }
+        .text-accent {
+            color: #0071e3;
+            font-weight: 500;
+        }
+        /* === Header / Nav === */
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e8e8ed;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+        nav .logo span {
+            color: #0071e3;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        nav ul li a {
+            font-size: 0.9rem;
+            color: #515154;
+            font-weight: 500;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #1d1d1f;
+            border-bottom-color: #0071e3;
+        }
+        .tel-link {
+            background: #0071e3;
+            color: #fff !important;
+            padding: 0.4rem 1rem !important;
+            border-radius: 20px;
+            border-bottom: none !important;
+            font-weight: 600;
+        }
+        .tel-link:hover {
+            background: #005bbf;
+            color: #fff !important;
+        }
+        /* === Hero Section === */
+        .hero-info {
+            background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero-info h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero-info p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .hero-info .cta-btn {
+            display: inline-block;
+            background: #0071e3;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s ease;
+        }
+        .hero-info .cta-btn:hover {
+            background: #005bbf;
+            color: #fff;
+        }
+        /* === Card Grid === */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #1d1d1f;
+        }
+        .card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+        }
+        /* === Info Table === */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .info-table th,
+        .info-table td {
+            padding: 1rem 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid #e8e8ed;
+        }
+        .info-table th {
+            background: #f5f5f7;
+            font-weight: 600;
+            color: #1d1d1f;
+            width: 30%;
+        }
+        .info-table td {
+            color: #515154;
+        }
+        .info-table tr:last-child td,
+        .info-table tr:last-child th {
+            border-bottom: none;
+        }
+        /* === FAQ === */
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 0.8rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .faq-item h3 {
+            font-size: 1.05rem;
+            margin: 0 0 0.3rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item h3::after {
+            content: '+';
+            font-size: 1.3rem;
+            color: #0071e3;
+            font-weight: 300;
+        }
+        .faq-item p {
+            margin: 0.5rem 0 0;
+            font-size: 0.95rem;
+            color: #515154;
+        }
+        /* === Footer === */
+        footer {
+            background: #1d1d1f;
+            color: #a1a1a6;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #a1a1a6;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        /* === Responsive === */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.4rem; }
+            .hero-info h1 { font-size: 2rem; }
+            nav ul { gap: 0.8rem; }
+            nav ul li a { font-size: 0.8rem; }
+            .card-grid { grid-template-columns: 1fr; }
+            .info-table th,
+            .info-table td { padding: 0.8rem; display: block; width: 100%; }
+            .info-table th { background: transparent; padding-bottom: 0; }
+            .info-table td { padding-top: 0; border-bottom: 1px solid #e8e8ed; }
+            .info-table tr:last-child td { border-bottom: none; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 0 15px; }
+            .hero-info { padding: 2.5rem 0; }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">🎤 <span>당산</span> 코인노래방</a>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/info" class="active">정보</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="tel:010-6279-0862" class="tel-link">📞 전화문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-info">
+        <div class="container">
+            <h1>당산 코인노래방,<br>모든 정보를 알려드려요</h1>
+            <p>위치, 가격, 시설, 꿀팁까지!<br>혼코노부터 단체까지 완벽 대비</p>
+            <a href="tel:010-6279-0862" class="cta-btn">📞 지금 전화해서 확인</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <!-- 기본 정보 표 -->
+            <h2>📋 기본 정보</h2>
+            <table class="info-table">
+                <tr>
+                    <th>업체명</th>
+                    <td>당산 코인노래방 (별칭: 당코노)</td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td>서울 영등포구 당산동3가 123-4 (당산역 3번 출구 도보 3분)</td>
+                </tr>
+                <tr>
+                    <th>영업시간</th>
+                    <td>24시간 연중무휴</td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><a href="tel:010-6279-0862">010-6279-0862</a></td>
+                </tr>
+                <tr>
+                    <th>주차</th>
+                    <td>건물 지하 주차장 (2시간 무료)</td>
+                </tr>
+            </table>
+
+            <!-- 가격 정보 카드 -->
+            <h2>💰 가격 & 이용권</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="icon">🎵</div>
+                    <h3>1곡 기본</h3>
+                    <p><strong>500원</strong> (1인 기준)<br>최신곡 포함 전곡 동일 가격</p>
+                </div>
+                <div class="card">
+                    <div class="icon">⏰</div>
+                    <h3>30분 이용권</h3>
+                    <p><strong>3,000원</strong><br>약 6곡 부르면 본전! 혼코노 추천</p>
+                </div>
+                <div class="card">
+                    <div class="icon">👥</div>
+                    <h3>1시간 이용권</h3>
+                    <p><strong>5,000원</strong><br>2인이상 최애! 무제한 느낌</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔥</div>
+                    <h3>2시간 패키지</h3>
+                    <p><strong>8,000원</strong><br>단체나 실컷 부르고 싶을 때</p>
+                </div>
+            </div>
+
+            <!-- 시설 안내 -->
+            <h2>🎤 시설 & 특징</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="icon">🎧</div>
+                    <h3>음향 시스템</h3>
+                    <p>JBL 스피커 + 고감도 마이크<br>소리 울림 깔끔, 목 안 아파요</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📺</div>
+                    <h3>TV & 조명</h3>
+                    <p>55인치 대화면, LED 무드등<br>셀프 타이머, 녹음 기능 지원</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🧼</div>
+                    <h3>청결 & 방음</h3>
+                    <p>매일 자정 전체 소독<br>방음 완벽, 옆방 소리 안 들림</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📱</div>
+                    <h3>스마트 시스템</h3>
+                    <p>QR 코드로 곡 추가, 리모컨 필요 없음<br>최신 가요, 트로트, 팝송 모두 보유</p>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <h2>❓ 자주 묻는 질문</h2>
+            <div class="faq-item">
+                <h3>혼자 가도 괜찮나요? (혼코노)</h3>
+                <p>완전 괜찮아요! 오히려 혼코노족 많아요. 1인 부스도 있고, 30분 이용권으로 가볍게 스트레스 풀기 좋아요. 저도 자주 혼가는데 직원분들 눈치 안 주고 편하게 해주셔요.</p>
+            </div>
+            <div class="faq-item">
+                <h3>카드 결제 되나요?</h3>
+                <p>네, 현금/카드/모바일페이 다 됩니다. 계좌이체도 가능해요. (토스, 카카오페이 OK)</p>
+            </div>
+            <div class="faq-item">
+                <h3>음식이나 음료 반입 가능한가요?</h3>
+                <p>음료는 가능! 근데 술은 안 됩니다. 코인노래방이라 기본적으로 무알콜 공간이에요. 근처 편의점에서 음료 사서 들어가도 돼요. (쓰레기는 꼭 정리합시다~)</p>
+            </div>
+            <div class="faq-item">
+                <h3>예약해야 하나요?</h3>
+                <p>예약 없이 워크인 가능! 주말 저녁(7시~10시)은 좀 붐비니까 전화 한번 주시면 자리 있어요. <a href="tel:010-6279-0862">010-6279-0862</a>로 미리 물어보세요.</p>
+            </div>
+            <div class="faq-item">
+                <h3>최신곡은 얼마나 자주
+</body>
+</html>
